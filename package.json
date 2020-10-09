@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "migrate": "postgrator --config postgrator-config.js",
+    "migrate:production": "heroku run npm run migrate",
     "start": "nodemon src/server.js",
+    "deploy": "git push heroku master",
+    "postdeploy": "npm run migrate:production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -22,13 +25,11 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4",
     "pg": "^8.4.0",
+    "postgrator-cli": "^3.2.0",
     "supertest": "^5.0.0",
     "uuid": "^8.3.0",
     "valid-url": "^1.0.9",
     "winston": "^3.3.3",
     "xss": "^1.0.8"
-  },
-  "devDependencies": {
-    "postgrator-cli": "^3.2.0"
   }
 }
