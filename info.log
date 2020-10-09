@@ -1,0 +1,12 @@
+{"message":"Unauthorized request to path: /folders","level":"error"}
+{"message":"Unauthorized request to path: /notes","level":"error"}
+{"message":"Unauthorized request to path: /folders","level":"error"}
+{"message":"Unauthorized request to path: /notes","level":"error"}
+{"message":"Unauthorized request to path: /folders","level":"error"}
+{"message":"Folder with id 1 created.","level":"info"}
+{"message":"folder_id is required","level":"error"}
+{"message":"Note with id 1 created.","level":"info"}
+{"message":"Folder with id 2 created.","level":"info"}
+{"message":"Note with id 2 created.","level":"info"}
+{"message":"Note with id 2 deleted.","level":"info"}
+{"message":"Note with id 3 created.","level":"info"}
